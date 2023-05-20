@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body onload="dataLoadFunction(0)">
+    <div id="header">
+        <div id="logo">
+            <h2>Quiz App</h2>
+        </div>
+    </div>
+    <div id="mainContainer">
+        <div id="wrapper">
+            <div id="timerCounter">
+                <div id="QuestionCounts">
+                    <span><span id="incrementNumber">2 </span>of <span id="FixNumber">3 </span>Question</span>
+                </div>
+                <div id="timer">
+                    <span id="fixTime">2:0m</span> <span id="counter"><span id="mint">0</span>:<span id="second">0</span></span>
+                </div>
+            </div>
+            <div id="questionHead">
+                <h4 id="questions">Question Goes Here</h4>
+            </div>
+            <div id="options">
+                <p class="opti" onclick="getActive(this)">Option 1</p>
+                <p class="opti" onclick="getActive(this)">Option 2</p>
+                <p class="opti" onclick="getActive(this)">Option 3</p>
+                <p class="opti" onclick="getActive(this)">Option 4</p>
+                <button id="nextbtn" onclick="NextQuestion()">Next</button>
+                <a href="./result.html" class="anchorTage"><button id="nextbtn" onclick="NextQuestion()">Submit</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
